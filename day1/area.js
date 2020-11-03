@@ -1,23 +1,3 @@
-/* 
-1. getArea 함수를 사용하면, 모든 넓이 값을 얻을 수 있다.
-
-getArea('circle', 10); 파이 알 제곱
-원, 반지름
->  원의 넓이 값출력
-
-getArea('rect', 10,15);
-사각형, 가로, 세로
->  사각형의 넓이값출력
-
-getArea('trapezoid', 10,15,12);
-사다리꼴, 가로1, 세로, 가로2
->  사다리꼴의 넓이값출력
-
-getArea('circle', 1, n);
-> 반지름이 1부터 n까지 1씩 증가하면서, n개까지의 원의 넓이의 모든 합을 출력.
-
-*/
-
 const getArea = (shape, width1, height, width2) => {
   switch (shape) {
     case 'circle':
