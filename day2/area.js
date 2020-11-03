@@ -19,8 +19,8 @@ class Quadrangle {
 
   getArea() {
     const width = (this.width1 + this.width2) / 2;
-    console.log(`${this.shape}의 넓이는 ${width * this.height}`);
-    saveExecutionSequence(`${this.shape}`);
+    console.log(`${this.shape}`);
+    saveExecutionSequence(`${this.shape}의 넓이: ${width * this.height}`);
   }
 }
 
@@ -33,7 +33,7 @@ class Circle {
 
   getArea() {
     console.log(`원의 넓이는 ${Math.pow(this.radius, 2) * PI}`);
-    saveExecutionSequence('원');
+    saveExecutionSequence(`원의 넓이: ${Math.pow(this.radius, 2) * PI}`);
   }
 
   getAreaSum(n) {
@@ -43,7 +43,7 @@ class Circle {
       sum = sum + area;
     }
     console.log(`반지름이 1부터 n까지 n개의 원의 넓이 합은 ${sum}`);
-    saveExecutionSequence('원의 넓이의 합');
+    saveExecutionSequence(`원의 넓이 합: ${sum}`);
   }
 }
 
