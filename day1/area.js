@@ -1,7 +1,9 @@
+const PI = 3.14;
+
 const getArea = (shape, width1, height, width2) => {
   switch (shape) {
     case 'circle':
-      console.log(`${shape} area : ${3.14 * width1 * width1}`);
+      console.log(`${shape} area : ${PI * width1 * width1}`);
       break;
 
     case 'rect':
@@ -19,7 +21,7 @@ const sumCircles = (n) => {
   let area = 0;
 
   for (let radius = 1; radius <= n; radius++) {
-    area = radius * radius * 3.14;
+    area = radius * radius * PI;
     sum = sum + area;
   }
 
