@@ -19,7 +19,7 @@ class Quadrangle {
 
   getArea() {
     const width = (this.width1 + this.width2) / 2;
-    console.log(`${this.shape}`);
+    console.log(`${this.shape}의 넓이: ${width * this.height}`);
     saveExecutionSequence(`${this.shape}의 넓이: ${width * this.height}`);
   }
 }
