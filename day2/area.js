@@ -38,7 +38,7 @@ class Circle {
 
   getAreaSum(n) {
     let sum = 0;
-    for (let i = 1; i <= this.radius; i++) {
+    for (let i = 1; i <= n; i++) {
       const area = Math.pow(i, 2) * PI;
       sum = sum + area;
     }
@@ -55,7 +55,7 @@ function init() {
   rectangle.getArea();
   trapezoid.getArea();
   circle.getArea();
-  circle.getAreaSum(3);
+  circle.getAreaSum(4);
   printExecutionSequence();
 }
 
