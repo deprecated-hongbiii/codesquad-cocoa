@@ -5,12 +5,12 @@
 
 const peoples = ['crong!@#', 'honux5', 'sarah#', 'hea3d', 'zello', '5lucas'];
 
-const filterId = (array) => {
-  const checkSpecial = (peoples) => {
+const filterId = () => {
+  const checkSpecial = (array) => {
     const CHECK_SPECIAL = /[~!@#$%^&*()_+|<>?:{}]/;
     let notHaveSpecial = [];
 
-    for (let people of peoples) {
+    for (let people of array) {
       if (CHECK_SPECIAL.test(people) == true) {
         continue;
       } else {
@@ -38,4 +38,4 @@ const filterId = (array) => {
   console.log(removeNumber(checkSpecial(peoples)));
 };
 
-filterId(peoples);
+filterId();
