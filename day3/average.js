@@ -19,3 +19,14 @@ const averageOfEachStudent = grades.map((elem) => average(elem));
 console.log(averageOfEachStudent);
 
 // 학생 개개인의 최고 점수만 골라내기
+const getMaxGrade = (array) => {
+  const max = Math.max(...array);
+  return max;
+};
+
+const maxGradeOfEachStudent = grades.map((elem) => getMaxGrade(elem));
+console.log(maxGradeOfEachStudent);
+
+// 최고 점수들의 평균
+const averageOfMaxGrades = average(maxGradeOfEachStudent);
+console.log(averageOfMaxGrades);
