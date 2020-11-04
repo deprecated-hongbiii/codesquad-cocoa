@@ -2,7 +2,7 @@ let binaryArr = [];
 let result = [];
 
 const solution = (n, t, m) => {
-  const TOTAL_NUM = t * m;
+  const TOTAL_NUM = Math.pow(2, t - 1) - 1;
 
   const changeToBinary = (TOTAL_NUM) => {
     for (let i = 0; i < TOTAL_NUM; i++) {
