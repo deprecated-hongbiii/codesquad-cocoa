@@ -1,4 +1,6 @@
-const data = {
+var exports = (module.exports = {});
+
+exports.data = {
   debug: 'on',
   window: {
     title: 'Sample Konfabulator Widget',
@@ -24,5 +26,3 @@ const data = {
     onMouseUp: 'sun1.opacity = (sun1.opacity / 100) * 90;',
   },
 };
-
-module.exports.data;
