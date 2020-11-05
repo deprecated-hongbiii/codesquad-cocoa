@@ -1,5 +1,3 @@
-let factorialArr = [];
-
 const factorial = (number) => {
   if (number > 0) {
     return number * factorial(number - 1);
@@ -9,6 +7,7 @@ const factorial = (number) => {
 };
 
 const calculate = (m) => {
+  let factorialArr = [];
   for (let i = 1; i <= m; i++) {
     factorialArr.push(factorial(i));
   }
