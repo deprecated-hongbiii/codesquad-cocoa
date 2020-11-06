@@ -13,8 +13,6 @@ function getNumKey(obj) {
   for (key in obj) {
     if (typeof obj[key] === 'number') {
       numkey.push(key);
-    } else {
-      continue;
     }
   }
   keysOfNum.push(...numkey);
