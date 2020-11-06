@@ -2,7 +2,7 @@ const o = require('./o.js');
 const data = o.data;
 
 const keysOfNum = [];
-const dataArr = Object.values(data)
+Object.values(data)
   .filter((value) => typeof value === 'object')
   .forEach(getNumKey);
 
