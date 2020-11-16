@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  margin: 0;
+}
+
+.navbar {
+  background-color: #3d3d3d;
+  color: #dbdbdb;
+}
+
+header {
+  display: flex;
+}
+
+.todo {
+  width: 500px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.new-memo {
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: #ebe2de;
+  color: #3d3d3d;
+  width: 500px;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+}
+
+.new-memo:focus {
+  outline: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+button:focus {
+  outline: none;
+}
+
+.add {
+  background-color: #508164;
+  padding: 5px 10px;
+  font-size: 16px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+.items {
+  list-style: none;
+  padding: 0;
+}
+
+.item {
+  display: flex;
+  background-color: #f7f3f3;
+  width: 400px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  justify-content: space-between;
+}
+
+.content__text {
+  margin-left: 10px;
+}
+
+.item__delete {
+  font-size: 18px;
+  border-style: none;
+  background-color: transparent;
+  padding: 2px 6px;
+}
