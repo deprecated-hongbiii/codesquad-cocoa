@@ -6,6 +6,9 @@ function onAdd() {
   const text = input.value;
   const item = createItem(text);
   items.appendChild(item);
+
+  input.value = ''; // 입력 후 내용을 지워주고
+  input.focus(); // 바로 내용을 또 쓸 수 있도록 포커스
 }
 
 function createItem(text) {
