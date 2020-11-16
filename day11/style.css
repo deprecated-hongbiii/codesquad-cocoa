@@ -63,6 +63,11 @@ button:focus {
   overflow-y: scroll;
 }
 
+input:checked + span {
+  color: #757575;
+  text-decoration: line-through;
+}
+
 .item {
   display: flex;
   background-color: #f7f3f3;
