@@ -59,6 +59,8 @@ button:focus {
 .items {
   list-style: none;
   padding: 0;
+  height: 500px;
+  overflow-y: scroll;
 }
 
 .item {
@@ -66,6 +68,7 @@ button:focus {
   background-color: #f7f3f3;
   width: 400px;
   padding: 10px 15px;
+  margin-bottom: 6px;
   border-radius: 10px;
   justify-content: space-between;
 }
