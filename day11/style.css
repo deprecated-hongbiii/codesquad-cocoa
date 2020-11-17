@@ -10,6 +10,12 @@ body {
 .navbar {
   background-color: #3d3d3d;
   color: #dbdbdb;
+  height: 40px;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
 }
 
 header {
@@ -29,7 +35,8 @@ header {
   font-family: 'Noto Sans KR', sans-serif;
   background-color: #ebe2de;
   color: #3d3d3d;
-  width: 500px;
+  width: 400px;
+  margin-right: 5px;
   padding: 5px 10px;
   font-size: 16px;
   border-radius: 8px;
@@ -63,6 +70,10 @@ button:focus {
   overflow-y: scroll;
 }
 
+.content__checkbox:hover {
+  cursor: pointer;
+}
+
 input:checked + span {
   color: #757575;
   text-decoration: line-through;
@@ -71,7 +82,7 @@ input:checked + span {
 .item {
   display: flex;
   background-color: #f7f3f3;
-  width: 400px;
+  width: 450px;
   padding: 10px 15px;
   margin-bottom: 6px;
   border-radius: 10px;
@@ -86,5 +97,9 @@ input:checked + span {
   font-size: 18px;
   border-style: none;
   background-color: transparent;
-  padding: 2px 6px;
+  padding: 0;
+}
+.item__delete:hover {
+  color: #508164;
+  transform: scale(1.1);
 }
