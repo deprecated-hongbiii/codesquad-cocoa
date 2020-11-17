@@ -26,4 +26,12 @@ function createItem(text) {
   return itemRow;
 }
 
+function deleteItem(e) {
+  const toBeDeleted = e.target.parentElement.parentElement;
+  if (e.target.nodeName === 'I'){
+    toBeDeleted.remove();
+  }
+}
+
 addButton.addEventListener('click', onAdd);
+items.addEventListener('click', deleteItem);
