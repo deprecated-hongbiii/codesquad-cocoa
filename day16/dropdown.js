@@ -1,31 +1,28 @@
 'use strict';
 
-// mouseover 이벤트 발생
-// -> 1초 머물렀는지 확인하는 함수 실행
-// -> 그 함수의 결과값을 받아 노출 or 변화없음
-
 const fruits = document.querySelector('.fruits');
-function isOneSec() {
-  function oneSec() {
-    setTimeout(() => {
-      fruits.innerHTML = `
-      <li class="fruits__grape">grape</li>
-      <li class="fruits__apple">apple</li>
-      <li class="fruits__orange">orange</li>
-      <li class="fruits__banana">banana</li>
-      <li class="fruits__kiwi">kiwi</li>
-      <li class="fruits__strawberry">strawberry</li>
-      `
-    }, 1000)
-  }
-  const button = document.querySelector('.toggle');
-  button.addEventListener('mouseover', oneSec);
-  button.addEventListener('mouseout', clearTimeout(oneSec));
+let timer;
+
+function oneSec() {
+  timer = setTimeout(() => { // 변수에 넣어주기. 함수에 넣으면 못받아오는듯
+    console.log('함수실행');
+    fruits.innerHTML = `
+    <li class="fruits__grape">grape</li>
+    <li class="fruits__apple">apple</li>
+    <li class="fruits__orange">orange</li>
+    <li class="fruits__banana">banana</li>
+    <li class="fruits__kiwi">kiwi</li>
+    <li class="fruits__strawberry">strawberry</li>
+    `
+  }, 1000)
 }
-isOneSec();
+const button = document.querySelector('.toggle');
+button.addEventListener('mouseenter', oneSec);
+button.addEventListener('mouseout', () => clearTimeout(timer));
 
 const wrapper = document.querySelector('.wrapper');
 wrapper.addEventListener('mouseleave', () => {
-  fruits.remove('li');
+  const li = document.querySelectorAll('li');
+  li.forEach(v => v.remove())
   console.log('마우스가 떠났다.')
-})
+}) 
