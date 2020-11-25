@@ -1,0 +1,43 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  padding: 10px;
+  margin: 0;
+}
+
+.map-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.map {
+  width: 70%;
+  height: 100%;
+  background-color: #f3f7f0;
+  margin-right: 15px;
+}
+
+.map .village {
+  width: 200px;
+  height: 200px;
+  border: 3px solid #3a5c20;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.information {
+  width: 30%;
+}
+
+.button {
+  width: 90%;
+  margin-bottom: 20px;
+}
+
+.where {
+  margin-bottom: 20px;
+}
